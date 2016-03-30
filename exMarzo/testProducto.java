@@ -28,7 +28,7 @@ public class testProducto {
 	
 	private static void buscarId() throws IdNoValidoException{
 		
-		tienda.buscarId(Teclado.leerEntero("Introduce el id a buscar"));
+		tienda.buscarId(Teclado.leerEntero("Introduce mael id a buscar"));
 	}
 	
 	private static void buscarMarca() throws MarcaInvalidaException{
@@ -93,6 +93,7 @@ public class testProducto {
 
 public static void main (String[] args) throws ComponenteInvalidoException, MarcaInvalidaException, PrecioInvalidoException, DescripcionInvalidaException, IdNoValidoException, ProductoYaExisteException{
 	int opcion;
+	tienda = new Tienda();
 	do{ 
 		opcion = menu.gestionar();
 		
